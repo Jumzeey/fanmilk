@@ -7,9 +7,9 @@
 
   </div>
   <!-- Description -->
-  <div class="slide-description h-64 text-center text-xl text-gray-600" v-if="currentSlide"
+  <div class="slide-description h-72 text-center text-xl text-gray-600" v-if="currentSlide"
     :style="{ bottom: currentSlide.description ? '0' : '-100px' }">
-    <p class=" capitalize font-sans">"{{ currentSlide.description }}""</p>
+    <p class=" capitalize font-sans p-4">"{{ currentSlide.description }}""</p>
     <span class=""><button class="explore-button"  v-if="currentSlide.link" @click="exploreSlide">Explore</button></span>
   </div>
   <div class="button-wrap">
