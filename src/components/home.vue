@@ -247,14 +247,15 @@ export default {
   data() {
     return {
       slides: [
-        { backgroundImage: 'https://ik.imagekit.io/jumzeey/fanmilk/WhatsApp%20Image%202023-08-10%20at%207.27.39%20PM%20(2)_OuShNWMW9.jpeg?updatedAt=1691745772708', top: '', left: '' },
-        { backgroundImage: 'https://ik.imagekit.io/jumzeey/fanmilk/WhatsApp%20Image%202023-08-10%20at%207.27.39%20PM%20(3)_5uSeZ4N5T.jpeg?updatedAt=1691745769442', top: '', left: '' },
-        { backgroundImage: 'https://ik.imagekit.io/jumzeey/fanmilk/WhatsApp%20Image%202023-08-10%20at%207.27.39%20PM%20(1)_6_SFDAnrt.jpeg?updatedAt=1691745769423', top: '', left: '' },
-        { backgroundImage: 'https://ik.imagekit.io/jumzeey/fanmilk/WhatsApp%20Image%202023-08-10%20at%207.27.39%20PM_LH7RQNaz9.jpeg?updatedAt=1691745769384', top: '', left: '' },
+        { backgroundImage: 'https://ik.imagekit.io/jumzeey/fanmilk/choco_CEtlXVfZO.jpeg?updatedAt=1691766414371', top: '', left: '' },
+        { backgroundImage: 'https://ik.imagekit.io/jumzeey/fanmilk/citrus_eREM96NYQ.jpeg?updatedAt=1691766454371', top: '', left: '' },
+        { backgroundImage: 'https://ik.imagekit.io/jumzeey/fanmilk/apple_1N0ea5jgq.jpeg?updatedAt=1691766499778', top: '', left: '' },
+        { backgroundImage: 'https://ik.imagekit.io/jumzeey/fanmilk/strawberry_Px0h7GUft.jpeg?updatedAt=1691766550979', top: '', left: '' },
+        { backgroundImage: 'https://ik.imagekit.io/jumzeey/fanmilk/vanilla_hTZDUE1Jh.jpeg?updatedAt=1691766597686', top: '', left: '' },
         // ... add other slide URLs
       ],
       currentIndex: 0,
-      angle: 360 / 4, // Assuming there are 12 slides
+      angle: 360 / 5, // Assuming there are 12 slides
       setId: null,
     };
   },
