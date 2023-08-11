@@ -177,6 +177,7 @@ body {
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  background-color: #fec89a;
 }
 
 .slide-container {
@@ -239,6 +240,33 @@ body {
 
 .button-wrap .btn-prev {
   border-right: 1px solid #999;
+}
+@media all and (max-width: 1024px) {
+  .slide-container {
+    width: 55vw;
+    height: 55vw;
+  }
+  
+  .slide-container .slide {
+    width: 13vw;
+    height: 13vw;
+    margin-top: -6.5vw;
+    margin-left: -6.5vw;
+  }
+}
+
+@media all and (max-width: 720px) {
+  .slide-container {
+    width: 65vw;
+    height: 65vw;
+  }
+  
+  .slide-container .slide {
+    width: 15vw;
+    height: 15vw;
+    margin-top: -7.5vw;
+    margin-left: -7.5vw;
+  }
 }
 </style>
 
