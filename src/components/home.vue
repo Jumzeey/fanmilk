@@ -1,20 +1,22 @@
 <template>
-  <div class="slide-container" ref="slideContainer" :style="{ backgroundImage: containerBackground }">
-    <div class="slide" v-for="(slide, index) in slides" :key="index" :data-slide-no="index + 1"
-      @click="changeSlide(index)"
-      :style="{ backgroundImage: `url(${slide.backgroundImage})`, top: slide.top, left: slide.left }"
-      :class="{ active: currentIndex === index }"></div>
+  <div>
+    <div class="slide-container" ref="slideContainer" :style="{ backgroundImage: containerBackground }">
+      <div class="slide" v-for="(slide, index) in slides" :key="index" :data-slide-no="index + 1"
+        @click="changeSlide(index)"
+        :style="{ backgroundImage: `url(${slide.backgroundImage})`, top: slide.top, left: slide.left }"
+        :class="{ active: currentIndex === index }"></div>
 
-  </div>
-  <!-- Description -->
-  <div class="slide-description h-72 text-center text-xl text-gray-600" v-if="currentSlide"
-    :style="{ bottom: currentSlide.description ? '0' : '-100px' }">
-    <p class=" capitalize font-sans p-4">"{{ currentSlide.description }}""</p>
-    <span class=""><button class="explore-button"  v-if="currentSlide.link" @click="exploreSlide">Explore</button></span>
-  </div>
-  <div class="button-wrap">
-    <button type="button" class="btn btn-prev" @click="prevSlide">prev</button>
-    <button type="button" class="btn btn-next" @click="nextSlide">next</button>
+    </div>
+    <!-- Description -->
+    <div class="slide-description h-72 text-center text-xl text-gray-600" v-if="currentSlide"
+      :style="{ bottom: currentSlide.description ? '0' : '-100px' }">
+      <p class=" capitalize font-sans p-4">"{{ currentSlide.description }}""</p>
+      <span class=""><button class="explore-button" v-if="currentSlide.link" @click="exploreSlide">Explore</button></span>
+    </div>
+    <div class="button-wrap ">
+      <button type="button" class="btn btn-prev" @click="prevSlide">prev</button>
+      <button type="button" class="btn btn-next" @click="nextSlide">next</button>
+    </div>
   </div>
 </template>
 
@@ -24,6 +26,7 @@
   margin: 0;
   border: 0;
   box-sizing: border-box;
+  
 
 }
 
@@ -52,7 +55,7 @@
   cursor: pointer;
   transform: scale(1);
   opacity: 0.9;
-  transition: all 0.3s;
+  transition: all 5;
 }
 
 .slide.active,
@@ -88,6 +91,7 @@
 .button-wrap .btn-prev {
   border-right: 1px solid #999;
 }
+
 .explore-button {
   display: inline-block;
   margin-top: 10px;
@@ -104,6 +108,7 @@
   background-color: #f6f6f6;
   color: #333333;
 }
+
 @media all and (max-width: 1024px) {
   .slide-container {
     width: 55vw;
@@ -164,7 +169,7 @@ export default {
           top: '',
           left: '',
           link: 'https://example.com/slide1',
-          description: 'Description for Slide 4'
+          description: 'FanMilk flavoured creamy drink is anaffordable refreshing flavoured milkdrink that is available in coolflavours such as strawberry,apple, orange, pineapple, mango in frozen (sachet) format.'
         },
         {
           backgroundImage: 'https://ik.imagekit.io/jumzeey/fanmilk/vanilla_hTZDUE1Jh.jpeg?updatedAt=1691766597686',
